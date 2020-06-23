@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>music</title>
+	<style>
+		html,body {
+			height: 100%;
+		}
+		html {
+			background: black;
+		}
+		body {
+			background: #373a3c;
+			color: #ddd
+		}
+		section {
+			margin-left: 10px;
+		}
+		a {
+			text-decoration: none;
+		}
+		a:link {
+			text-decoration: none; color: #ddd;
+		}
+		a:visited {
+			text-decoration: none; color: #ddd;
+		}
+		a:hover {
+			color: #bbb;
+		}
+		.nav {
+			height: 70px;
+			border-bottom: 10px solid black;
+			display: flex;
+			align-items: center;
+			font-weight: bold;
+		}
+		.nav-right-items {
+			display: flex;
+			margin-left: auto;
+		}
+		.nav-item {
+			margin-right: 20px;
+			margin-left: 20px;
+		}
+		.main {	
+			display: flex;
+		}
+		.main-item {
+			width: 300px;
+			height: 300px;
+			border: 1px solid black;
+			margin: 0 1px;
+			padding: 0;
+
+		}
+		.main-item-title {
+			font-size: 1.5em;
+			text-align: center;
+			height: 53px;
+			line-height: 53px;
+			background: #666;
+			margin: 0;
+		}
+		.main-image {
+			 width: 300px;
+			 height: 247px;
+		}
+		.top {
+			position: fixed;
+			right: 10px;
+			bottom: 10px;
+			width: 50px;
+			height: 50px;
+			background: #ccc;
+			color: black;
+			text-align: center;
+			padding-top: 20px;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<div class="nav">
+			<p id="Music" style="margin-left: 10px; font-size: 1.5em; font-weight: bold;">Music</p>
+			<div class="nav-right-items">
+			<div class="nav-item"><a href="메인.html">Home</a></div>
+			<div class="nav-item"><a href="hiphop.html">힙합</a></div>
+			<div class="nav-item"><a href="Lo-fi.html">로파이</a></div>
+			<div class="nav-item"><a href="Jazz.html">재즈</a></div>
+			</div>
+		</div>
+	</header>
+	<section>
+		<header>
+			<h3>음악</h3>
+			<p>일정한 규칙의 화성이나 선율과 박자와 음정과 그리고 가사를 통해서 내는 소리를 음악이라고 한다.</p>
+			<iframe width="360" height="180" src="https://www.youtube.com/embed/qUzWOuXUpyk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</header>
+		<article>
+			<h3>음악의 장르</h3>
+		<div class="main">
+			<a href="hiphop.html"><div class="main-item"><p class="main-item-title">힙합</p><img class="main-image" src="Hiphop.jpg" alt=""></div></a>
+			<a href="Lo-fi.html"><div class="main-item"><p class="main-item-title">로파이</p><img class="main-image" src="Lofi.jpg" alt=""></div></a>
+			<a href="Jazz.html"><div class="main-item"><p class="main-item-title">재즈</p><img class="main-image" src="Jazz.jpg" alt=""></div></a>
+		</div>
+			클릭하여 세부정보로 이동
+		</article>
+	</section>
+	<a href="#Music"><div class="top">Top</div></a>
+</body>
+</html>
